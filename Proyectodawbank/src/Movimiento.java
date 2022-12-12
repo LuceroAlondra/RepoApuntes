@@ -1,4 +1,4 @@
-import java.time.LocalDate; //Importamos local date time para guardar la fecha
+import java.time.LocalDate; //Importamos local date time para guardar la fecha del momento
 import java.time.format.DateTimeFormatter; //importo para cambiar formato
 public class Movimiento {
 
@@ -9,9 +9,9 @@ public class Movimiento {
 	private CuentaBancaria cuentabancaria;//se añade cuenta bancaria
 	
 	public void setMovimiento(String idmovimiento, String tipomovimiento, double cantidad) {//condiciones para recibir datos (los que están aquí)
-		LocalDate primerafecha = LocalDate.now();//nos registra el dia de hoy
-		DateTimeFormatter fechafinal = DateTimeFormatter.ofPattern("dd-MM-yyyy");
-		String formattedDate = primerafecha.format(fechafinal);
+		LocalDate primerafecha = LocalDate.now();//nos registra el dia de hoy con el formato año/mes/dia
+		DateTimeFormatter fechafinal = DateTimeFormatter.ofPattern("dd-MM-yyyy");//Guardamos el tipo de formato que deseamos dia/mes/año
+		String formattedDate = primerafecha.format(fechafinal);//Aqui le pasamos el formato a la variable final con el resultado que queremos
 		this.idmovimiento = idmovimiento;
 		this.fechamovimiento = formattedDate;
 		this.tipomovimiento = tipomovimiento;
