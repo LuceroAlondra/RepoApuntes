@@ -2,11 +2,10 @@
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		TajetaEmbarque tarjetaEmbarque = new TajetaEmbarque();
+		TajetaEmbarque tarjetaembarque1 = new TajetaEmbarque();
+		tarjetaembarque1.DatosTarjeta(); tarjetaembarque1.Visualizar();
 		
-		tarjetaEmbarque.Visualizar();
 	}
 
 }
