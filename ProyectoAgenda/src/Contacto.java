@@ -14,7 +14,7 @@ public class Contacto {
 	public Contacto(String nombre) { //generamos los constructores
 		
 		this.nombre = nombre;
-		this.telefono = 0;
+		this.telefono = 0; 
 	}
 
 	public String getNombre() {
